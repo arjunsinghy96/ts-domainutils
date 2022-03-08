@@ -66,7 +66,7 @@ export class TldParser implements TldParserTree {
                 continue;
             }
             let root = this.trie;
-            // We create the tire from end of the domain. Therefore, reversed.
+            // We create the trie from end of the domain. Therefore, reversed.
             for (let part of tld.split('.').reverse()){
                 let node = root[part];
                 if (!!!node) {
@@ -100,7 +100,7 @@ export class TldParser implements TldParserTree {
             }
         }
 
-        let sub = this.trie;
+        var sub = this.trie;
         while (parts.length > 0 && sub !== null) {
             let part = parts.pop()
             let next_node = sub[part]

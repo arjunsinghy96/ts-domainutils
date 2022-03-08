@@ -1,5 +1,5 @@
 import * as inquirer from 'inquirer';
-import { TldParser, DomainData } from './tldparser';
+import { TldParser } from './tldparser';
 
 const parser = new TldParser();
 
