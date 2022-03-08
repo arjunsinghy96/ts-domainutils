@@ -4,7 +4,8 @@
   "description": "Domain parsing tools",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx tsc; node dist/index",
+    "test": "npx jest"
   },
   "repository": {
     "type": "git",
